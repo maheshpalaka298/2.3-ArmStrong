@@ -1,0 +1,34 @@
+//To Check Armstrong Number or not//
+import java.util.*;
+class  ArmStrong
+{
+	public static void main(String[] args) 
+	{
+		Scanner arm=new Scanner(System.in);
+		int Num,r,sum=0,temp;
+		System.out.println("Enter number to check armstrong or not");
+		Num=arm.nextInt();
+		temp=Num;
+		while(Num>0)
+		{
+			r=Num%10;
+			Num=Num/10;
+			sum+=(r*r*r);
+		}
+		if(temp==sum)
+			System.out.println(temp+" is an Armstromg Number");
+		else
+			System.out.println(temp+" not an Armstrong Number");
+		}
+}
+
+//Output1//
+Enter number to check armstrong or not
+407
+407 is an Armstromg Number
+press any key to continue . . .
+//Output2//
+Enter number to check armstrong or not
+173
+173 not an Armstrong Number
+Press any key to continue . . .
